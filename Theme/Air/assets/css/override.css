@@ -1,0 +1,40 @@
+
+/*
+    Top menu
+*/
+.topmenu {
+    margin: auto;  /* cross browser way to center */
+    width: 580px;
+}
+.topmenu ul {
+    float: left;
+    margin-left: 0;
+    padding-left: 0;
+    white-space: nowrap;
+}
+.topmenu li {
+    float: left;
+    list-style-type: none;
+}
+.topmenu a {
+    background: #fff;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+.topmenu a {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+.topmenu a:hover {
+    background: #555;
+    color: #fff;
+}
+.topmenu ul ul {
+     /* QuickStart theme doesn't support more than one level deep menu */
+    display: none;
+}
