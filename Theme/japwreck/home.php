@@ -237,9 +237,21 @@
           <div class="unit unit-md unit-md-horizontal text-md-left">
             <div class="unit-left"><span class="icon icon-lg mdi mdi-star text-primary"></span></div>
             <div class="unit-body">
-              <h5>We are fair and affordable</h5>
-              <p>Customers come back when they are treated right and billed a fair amount for our work. Other places
-                try to overcharge, betting you will never come back.</p>
+              <h5>
+                <?php echo ipSlot('text', array(
+             'id' => 'fairaffordbable',
+              'default' => "We are fair and affordable"
+
+)); ?>
+              </h5>
+              <p>
+                <?php echo ipSlot('text', array(
+             'id' => 'paraforheader3',
+              'default' => "Customers come back when they are treated right and billed a fair amount for our work. Other places
+              try to overcharge, betting you will never come back."
+
+)); ?>
+              </p>
             </div>
           </div>
         </div>
@@ -247,9 +259,21 @@
           <div class="unit unit-md unit-md-horizontal text-md-left">
             <div class="unit-left"><span class="icon icon-lg mdi mdi-fire text-primary"></span></div>
             <div class="unit-body">
-              <h5>Good reputation</h5>
-              <p>This is not a large chain shop. We are an independent automotive repair shop and our name is on the
-                building; lackluster workmanship is not an option.</p>
+              <h5>
+                <?php echo ipSlot('text', array(
+             'id' => 'goodreputation',
+              'default' => "Good Reputation"
+
+)); ?>
+              </h5>
+              <p>
+                <?php echo ipSlot('text', array(
+             'id' => 'goodreputation',
+              'default' => "This is not a large chain shop. We are an independent automotive repair shop and our name is on the
+              building; lackluster workmanship is not an option."
+
+)); ?>
+              </p>
             </div>
           </div>
         </div>
@@ -257,9 +281,22 @@
           <div class="unit unit-md unit-md-horizontal text-md-left">
             <div class="unit-left"><span class="icon icon-lg mdi mdi-flag-variant text-primary"></span></div>
             <div class="unit-body">
-              <h5>Our experience</h5>
-              <p>Our service professionals with years of experience are highly trained, so they know what they are
-                doing, learning and adapting to changing automotive platforms.</p>
+              <h5>
+                <?php echo ipSlot('text', array(
+             'id' => 'ourexperiance',
+              'default' => "Our Experiance"
+
+)); ?>
+              </h5>
+
+              <p>
+                <?php echo ipSlot('text', array(
+             'id' => 'ourexperiancebodytext',
+              'default' => "Our service professionals with years of experience are highly trained, so they know what they are
+              doing, learning and adapting to changing automotive platforms.."
+
+)); ?>
+              </p>
             </div>
           </div>
         </div>
@@ -270,11 +307,23 @@
   <section class="section-80 section-lg-top-90 section-lg-bottom-120 section-skew bg-lightest">
     <div class="skew-block"></div>
     <div class="shell text-sm-left">
-      <h2>our services</h2>
+      <h2>
+        <?php echo ipSlot('text', array(
+             'id' => 'text',
+              'default' => "our services"
+
+)); ?>
+      </h2>
       <hr class="divider divider-lg bg-gray-darkest hr-sm-left-0">
       <div class="range range-xs-center range-sm-left offset-top-50">
         <div class="cell-xs-10 cell-sm-8">
-          <p>We offer a variety of services to help you get back on the road and keep your life safer </p>
+          <p>
+            <?php echo ipSlot('text', array(
+             'id' => 'text',
+              'default' => "We offer a variety of services to help you get back on the road and keep your life safer ."
+
+)); ?>
+          </p>
         </div>
       </div>
       <div class="range text-left range-xs-center offset-top-50">
@@ -329,7 +378,7 @@
         </div>
         <div class="cell-xs-8 cell-sm-6 cell-md-4 offset-top-30"><a class="thumbnail-classic" href="services.html#undefined6"
             target="_self">
-            <figure><img width="370" height="250" src=<?php echo ipThemeUrl("images/services/service-06-370x250.jpg")?>
+            <figure><img width="370" height="250" src=<?php echo ipThemeUrl("assets/images/services/service-06-370x250.jpg")?>
                 alt="">
               <figcaption class="thumbnail-classic-caption text-center"><span class="icon icon-xxs fa-arrow-right"></span>
                 <h6 class="thumbnail-classic-title offset-top-0 text-uppercase text-light">Engine Performance</h6>
@@ -350,8 +399,8 @@
       <div class="range text-md-left offset-top-50 range-xs-center">
         <div class="cell-sm-8 cell-md-4">
           <article class="post-news"><a class="thumbnail-default" href="blog-post-page.html" target="_self">
-              <figure><img width="370" height="270" src=<?php echo ipThemeUrl("assets/images/blog/news-01-370x270.jpg"); ?> alt="" class="img-responsive"></figure><span
-                class="icon icon-xxs fa-link"></span>
+              <figure><img width="370" height="270" src=<?php echo ipThemeUrl("assets/images/blog/news-01-370x270.jpg");
+                  ?> alt="" class="img-responsive"></figure><span class="icon icon-xxs fa-link"></span>
             </a>
             <div class="offset-top-10">
               <h5 class="text-primary"><a href="blog-post-page.html" class="post-news-title">Expensive oil changes are
@@ -363,13 +412,21 @@
                   15:34</time>
               </div>
             </div>
-            <p>Oil changes may be more expensive with the required 0W-20 weight oil compared to oil, but only having to
-              service the car once or twice a year keeps annual costs to nearly a wash. </p>
+            <p>
+              <?php 
+                echo ipSlot('text', array(
+                  'id' => 'blogtext',
+                  'default' => "Oil changes may be more expensive with the required 0W-20 weight oil compared to oil, but only having to
+                  service the car once or twice a year keeps annual costs to nearly a wash."
+                )); 
+              ?>
+            </p>
           </article>
         </div>
         <div class="cell-sm-8 cell-md-4 offset-top-50 offset-md-top-0">
           <article class="post-news"><a class="thumbnail-default" href="blog-post-page.html" target="_self">
-              <figure><img width="370" height="270" src=<?php ipThemeUrl("assets/images/blog/news-02-370x270.jpg") ?>
+              <figure><img width="370" height="270" src=<?php echo ipThemeUrl("assets/images/blog/news-01-370x270.jpg")
+                  ?>
                 alt=""
                 class="img-responsive"></figure><span class="icon icon-xxs fa-link"></span>
             </a>
@@ -383,13 +440,22 @@
                   14:03</time>
               </div>
             </div>
-            <p>Actually, there is no such thing as a tuneup in the traditional sense of replacing parts to bring the
-              ignition and fuel systems up to specs for maximum performance and efficiency... </p>
+            <p>
+              <?php echo ipSlot('text', array(
+
+'id' => 'blogtext2',
+
+'default' => "Oil changes may be more expensive with the required 0W-20 weight oil compared to oil, but only having to
+service the car once or twice a year keeps annual costs to nearly a wash."
+
+)); ?>
+            </p>
           </article>
         </div>
         <div class="cell-sm-8 cell-md-4 offset-top-50 offset-md-top-0">
           <article class="post-news"><a class="thumbnail-default" href="blog-post-page.html" target="_self">
-              <figure><img width="370" height="270" src=<?php ipThemeUrl("assets/images/blog/news-03-370x270.jpg") ?>
+              <figure><img width="370" height="270" src=<?php echo ipThemeUrl("assets/images/blog/news-01-370x270.jpg")
+                  ?>
                 alt="" class="img-responsive"></figure><span class="icon icon-xxs fa-link"></span>
             </a>
             <div class="offset-top-10">
@@ -402,13 +468,21 @@
                   14:03</time>
               </div>
             </div>
-            <p>No, you don't, according to every auto manufacturer we've talked to. The main advocates of the
-              3,000-mile oil change ...</p>
+            <p>
+              <?php echo ipSlot('text', array(
+
+'id' => 'blogtext3',
+
+'default' => "Oil changes may be more expensive with the required 0W-20 weight oil compared to oil, but only having to
+service the car once or twice a year keeps annual costs to nearly a wash."
+
+)); ?>
+            </p>
           </article>
         </div>
       </div>
       <div class="offset-top-50"><a href="blog-archive.html" class="btn btn-primary btn-sm">view all news</a></div>
     </div>
   </section>
-<!-- Java script-->
-<?php echo ipView('_footer.php')->render(); ?>
+  <!-- Java script-->
+  <?php echo ipView('_footer.php')->render(); ?>

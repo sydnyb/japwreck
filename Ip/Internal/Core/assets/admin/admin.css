@@ -11421,3 +11421,9 @@
 .ipModuleInlineManagement._hilite {
   outline: #4d4d4d dashed 1px;
 }
+
+.ip .modal-backdrop.in, .modal-backdrop.in {
+  z-index: -1;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}

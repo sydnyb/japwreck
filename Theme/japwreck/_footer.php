@@ -2,7 +2,16 @@
 <section class="section-80 section-md-top-65 section-md-bottom-100 bg-gray-darkest context-dark section-skew section-skew-wide">
   <div class="skew-block"></div>
   <div class="shell text-md-left">
-    <h2>Testimonials</h2>
+    <h2>
+
+    <?php echo ipSlot('text', array(
+
+'id' => 'Testimonialstext',
+
+'default' => "Testimonials"
+
+)); ?>
+    </h2>
     <hr class="divider divider-lg bg-white hr-md-left-0">
     <div class="offset-top-50">
       <div data-loop="false" data-items="1" data-dots="true" data-mouse-drag="false" data-sm-items="2" data-nav="false"
@@ -15,11 +24,24 @@
               <div class="unit-body">
                 <div class="inset-md-right-40">
                   <p>
-                    <q>We have used 'ACR Auto' exclusively for 12 years now. They have serviced 10 different vehicles
-                      for us in that time, and have always been fast, efficient, fair, honest, and trustworthy!</q>
+                    <q>
+                    <?php echo ipSlot('text', array(
+
+'id' => 'footercite1',
+
+'default' => "We have used 'ACR Auto' exclusively for 12 years now. They have serviced 10 different vehicles
+for us in that time, and have always been fast, efficient, fair, honest, and trustworthy!"
+
+)); ?>
+
+</q>
                   </p>
                   <p>
-                    <cite>Evelyn Fisher</cite>
+<cite><?php echo ipSlot('text', array(
+      'id' => 'cite',
+      'default' => "Evelyn Fisher"
+      )); ?>
+</cite>
                   </p>
                 </div>
               </div>
@@ -140,9 +162,7 @@
 <footer class="section-60 page-footer bg-gray-darkest section-skew">
   <div class="skew-block"></div>
   <div class="shell">
-    <!--Footer brand--><a href="index.html"><img src=<?php echo ipThemeUrl("assets/images/logo-light-136x75.png") ?>
-      width="136" height="75" alt=""
-      class="img-responsive reveal-inline-block"></a>
+    <!--Footer brand--><a href="index.html"><?php echo ipSlot ('logo')?> </a>
     <div class="offset-top-20">
       <ul class="list-inline list-inline-dark">
         <li><a href="#" class="icon icon-xxs fa-facebook"></a></li>
